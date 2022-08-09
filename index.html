@@ -1,1 +1,205 @@
-Hello World
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+
+    <title>FavMusic</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontSize: {
+                    'tiny': '.875rem',
+                    'base': '1rem',
+                    'lg': '1.125rem',
+                    'xl': '1.25rem',
+                    '2xl': '1.5rem',
+                    '5xl': '2rem',
+                    '6xl': '4rem',
+                    '7xl': '5rem',
+                },
+                extend: {
+                    colors: {
+                        'card-bg': '#c8ced4',
+                        'primary-color': '#0175A6',
+
+                    },
+                }
+            }
+        }
+    </script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Main Section -->
+    <div class="bg-[url('./assets/images/bg.jpg')] bg-cover py-60 md:py-30">
+        <div class='flex flex-row'>
+
+            <h1 class='flex-1 text-white text-5xl text-left pl-5 md:pl-20 '>MÜZİK <br /> DÜNYAMA <br />
+                HOŞGELDİN</h1>
+
+            <div class='flex-1 text-white text-left pr-5 md:pr-40'>
+                <div class='group  border rounded-sm bg-card-bg opacity-80 p-5 hover:bg-slate-200 
+                hover:opacity-1 transition-colors duration-500'>
+                    <h1 class=' text-black font-bold text-lg group-hover:text-orange-500'>Bu sayfada neler mi var?</h1>
+
+                    <div class='text-primary-color  transition-colors duration-700'>
+                        <a href="#" class='flex gap-x-1'>
+                            <i class="fa-solid fa-headphones-simple pt-1 group-hover:text-orange-800"></i>
+                            <p class='hover:font-semibold group-hover:text-orange-300'>En sevdiğim şarkılar</p>
+                        </a>
+                        <a href="#" class='flex gap-x-1'>
+                            <i class="fa-solid fa-headphones-simple pt-1 group-hover:text-orange-800"></i>
+                            <p class='hover:font-semibold group-hover:text-orange-300'>Favori albümlerim</p>
+                        </a>
+                        <a href="#" class='flex gap-x-1'>
+                            <i class="fa-solid fa-headphones-simple pt-1 group-hover:text-orange-800"></i>
+                            <p class='hover:font-semibold group-hover:text-orange-300'>Sanatçılara ait bilgiler</p>
+                        </a>
+                        <a href="#" class='flex gap-x-1'>
+                            <i class="fa-solid fa-headphones-simple pt-1 group-hover:text-orange-800"></i>
+                            <p class='hover:font-semibold group-hover:text-orange-300'>Eğlenceli Anketler</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Sagopa Kajmer Section -->
+    <div class="container mx-auto py-4">
+        <div class="border rounded-md border-slate-600 border-2 p-5 hover:border-orange-300 transition-colors duration-700 ">
+            <div class="flex pb-5">
+                <div class="flex-1 "> <img src="assets/images/singer1.jpg" alt="sagopa kajmer" class="w-45 h-40 "></div>
+                <div class="flex-1 pl-5 md:pl-0">
+                    <h1 class="font-bold text-primary-color text-lg">SAGOPA KAJMER</h1>
+                    <ul class="list-disc list-inside">
+                        <li>Sagopa kajmer bir rap sanatçısıdır.</li>
+                        <li>Gerçek adı Yunus Özyavuzdur.</li>
+                        <li>G.O.R.A filminin müziklerini yapmıştır</li>
+                        <li>Melankolia adında müzik şirketi bulunmaktadır.</li>
+                    </ul>
+                </div>
+                <div class="flex-1 pl-5 md:pl-5">
+                    <h1 class="font-bold text-primary-color text-lg">En Sevdiğim Albümleri</h1>
+                    <ul class="list-disc list-inside">
+                        <li>Kağıt Kesikleri</li>
+                        <li>Kötü İnsanları Tanıma Senesi</li>
+                        <li>Saydam Odalar</li>
+                        <li>Bendeki Sen</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="flex pt-5">
+                <div class="flex-1">
+                    <iframe id="poltio-embed-quiz-4100" class="poltio-embed"
+                        src="https://www.poltio.com/e/quiz/4100?utm_source=embed2&utm_medium=&utm_campaign=quiz-4100&share=off&notify=off&align=center"
+                        width="100%" height="800" frameBorder="0" allowFullScreen="allowfullscreen" scrolling="yes"
+                        title="Embed" allow="clipboard-write"></iframe>
+                </div>
+                <div class="flex-1">
+                    <iframe id="poltio-embed-quiz-4050" class="poltio-embed"
+                        src="https://www.poltio.com/e/quiz/4050?utm_source=embed2&utm_medium=&utm_campaign=quiz-4050&share=off&notify=off&align=center"
+                        width="100%" height="800" frameBorder="0" allowFullScreen="allowfullscreen" scrolling="yes"
+                        title="Embed" allow="clipboard-write"></iframe>
+                </div>
+                <div class="flex-1">
+                    <iframe id="poltio-embed-quiz-4101" class="poltio-embed"
+                        src="https://www.poltio.com/e/quiz/4101?utm_source=embed2&utm_medium=&utm_campaign=quiz-4101&share=off&notify=off&align=center"
+                        width="100%" height="800" frameBorder="0" allowFullScreen="allowfullscreen" scrolling="yes"
+                        title="Embed" allow="clipboard-write"></iframe>
+                </div>
+
+            </div>
+
+            <div class="border border-2 border-gray-400 rounded-sm">
+                <h1 class="font-bold text-primary-color text-lg bg-gray-200 p-2">Kağıt Kesikleri</h1>
+
+                <div class="flex p-5">
+                    <div class="flex-1">
+                        <img src="assets/images/album1.jpg" alt="album1" class="w-45 h-40">
+                    </div>
+                    <div class="flex-1  pl-5 md:pl-0">
+                        <ul class="list-none">
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Dokunan Yanar</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Gecenin Donduğu Yerde</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Halen</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Derin Nefes</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Bla Bla Bla</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Aklımı Kaçırmadığım Bir Gün Daha</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1  pl-5 md:pl-0">
+                        <ul class="list-none">
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Elbet</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Zamanı Geldi Mi</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Ne Fayda</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Kağıt Kesikleri</li>
+                            <li> <i class="fa-solid fa-circle-play mr-2"></i>Olanlar Oldu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="pt-5">
+    <div class="border border-2 border-gray-400 rounded-sm ">
+        <h1 class="font-bold text-primary-color text-lg bg-gray-200 p-2">Bendeki Sen</h1>
+
+        <div class="flex p-5">
+            <div class="flex-1">
+                <img src="assets/images/album2.jpg" alt="album1" class="w-45 h-40">
+            </div>
+            <div class="flex-1  pl-5 md:pl-0">
+                <ul class="list-none">
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Bu Böyledir</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Terk-i Diyar</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Bir Dizi İz</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>İyi Bilirim</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Ne Olur</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Sen Hiç Sevmeyi Bilmezsin</li>
+                </ul>
+            </div>
+            <div class="flex-1  pl-5 md:pl-0">
+                <ul class="list-none">
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Merhametine Dön</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Mevsimler Gibisin</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Zaman Alacak İntikamımı</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Tadı Yok</li>
+                    <li> <i class="fa-solid fa-circle-play mr-2"></i>Ayılırsın ve Anlarsın</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
