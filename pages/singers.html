@@ -1,0 +1,230 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>FavMusic | Şarkıcı</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#0092E4',
+                        'primary-bg-color': '#F1F8FF'
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="relative bg-gray-50">
+        <div class="relative bg-gray-800 shadow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-0">
+                <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="../index.html">
+                            <span class="sr-only">Fav Music</span>
+                            <img class="h-12 w-auto " src="../assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-10 text-white ">
+
+                        <a href="../index.html"
+                            class="text-base font-medium hover:text-primary-color transition-colors duration-300">
+                            Anasayfa </a>
+                        <a href="singers.html"
+                            class="text-base font-medium text-primary-color transition-colors duration-300"> Şarkıcılar
+                        </a>
+                        <a href="albums.html"
+                            class="text-base font-medium hover:text-primary-color transition-colors duration-300">
+                            Albümler </a>
+                        <a href="poltio.html"
+                            class="text-base font-medium hover:text-primary-color transition-colors duration-300">
+                            Anketler </a>
+
+                    </nav>
+
+                </div>
+            </div>
+
+
+            <!-- Mobile -->
+            <div class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden">
+                <div
+                    class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-gray-800 divide-y-2 divide-gray-50">
+                    <div class=" pb-1 px-5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <img class="h-10 w-auto" src="../assets/images/logo.png" alt="logo">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="py-3 px-5 space-y-6">
+                        <div class="grid grid-cols-3 gap-y-4 gap-x-8 text-white">
+                            <a href="singers.html"
+                                class="text-base font-medium text-primary-color transition-colors duration-300">
+                                Şarkıcılar </a>
+                            <a href="albums.html"
+                                class="text-base font-medium hover:text-primary-color transition-colors duration-300">
+                                Albümler </a>
+                            <a href="poltio.com"
+                                class="text-base font-medium hover:text-primary-color transition-colors duration-300">
+                                Anketler </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Main Section -->
+
+    <div class="px-20 py-10">
+
+
+
+
+
+        <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+
+            <li>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 border hover:border-primary-color h-full " >
+                    <img class="w-full" src="../assets/images/singer1.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Sagopa Kajmer</div>
+                        <p class="text-gray-600 text-base">
+                            Sagopa Kajmer bir rap sanatçısıdır.
+                            Gerçek adı Yunus Özyavuz'dur.
+                            G.O.R.A. filminin müziklerini yapmıştır.Melankolia adında müzik şirketi vardır. <br> 17 adet
+                            albümü bulunmaktadır.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 border hover:border-primary-color h-full">
+                    <img class="w-full" src="../assets/images/singer2.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Kolera</div>
+                        <p class="text-gray-600 text-base">
+                            Kolera bir rap sanatçısıdır.
+                            Gerçek adı Esen Güler'dir. <br>
+                            Melankolia Müzik'ten ayrılıp kendi müzik şirketi olar Elessar'ı kurmuştur. <br> 8 adet albümü
+                            bulunmaktadır.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 border hover:border-primary-color h-full">
+                    <img class="w-full" src="../assets/images/singer3.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Göksel</div>
+                        <p class="text-gray-600 text-base">
+                            Göksel hem şarkıcı hem de iyi bir söz yazarıdır.
+                        'Depresyondayım'
+                            şarkısı ile herkesce tanınmıştır. <br>
+                            12 adet albümü bulunmaktadır.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 border hover:border-primary-color h-full">
+                    <img class="w-full" src="../assets/images/singer4.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Pinhani</div>
+                        <p class="text-gray-600 text-base">
+                            Alternatif rock türünde müzik yapan bir Türk müzik grubudur.
+                            'Kavak Yelleri' dizisine yaptığı müzikler ile bir döneme damga vurmuştur.
+                            Şarkılarını www.pinhani.com üzerinden paylaşmaktadır.
+                            9 adet albümü bulunmaktadır.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 border hover:border-primary-color h-full">
+                    <img class="w-full" src="../assets/images/singer5.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Emir Can İğrek</div>
+                        <p class="text-gray-600 text-base">
+                            Emir Can İğrek hem şarkıcı hem de bir söz yazarıdır.
+                            'Nalan' şarkısı ile çıkış yapmıştır.
+                            Birçok şarkıcıya beste vermiştir.
+                            1 adet albümü bulunmaktadır ancak çok sayıda single çıkarmıştır.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4">
+                </div>
+            </li>
+
+            <li>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 border hover:border-primary-color h-full">
+                    <img class="w-full" src="../assets/images/singer6.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Mabel Matiz</div>
+                        <p class="text-gray-600 text-base">
+                            Gerçek adı Fatih Karaca'dır.
+                            Mabel Matiz hem şarkıcı hem de bir söz yazarıdır.
+                            'Sultan Süleyman' yorumu ile tanınmıştır.
+                            5 adet albümü bulunmaktadır.
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+
+
+
+        </ul>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
