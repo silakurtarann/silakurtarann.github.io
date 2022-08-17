@@ -11,6 +11,10 @@
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <title>FavMusic | Albüm</title>
 
     <script>
@@ -19,14 +23,15 @@
                 extend: {
                     colors: {
                         'primary-color': '#0092E4',
-                        'primary-bg-color': '#F1F8FF'
+                        'primary-bg-color': '#F1F8FF',
+                        'second-color': '#008290',
                     },
                 }
             }
         }
     </script>
 
-  
+
 
 </head>
 
@@ -57,10 +62,16 @@
                     </div>
                     <nav class="hidden md:flex space-x-10 text-white ">
 
-                        <a href="../index.html" class="text-base font-medium hover:text-primary-color transition-colors duration-300"> Anasayfa </a>
-                        <a href="singers.html" class="text-base font-medium hover:text-primary-color transition-colors duration-300"> Şarkıcılar </a>
-                        <a href="albums.html" class="text-base font-medium text-primary-color transition-colors duration-300"> Albümler </a>
-                        <a href="poltio.html" class="text-base font-medium hover:text-primary-color transition-colors duration-300"> Anketler </a>
+                        <a href="../index.html"
+                            class="text-base font-medium hover:text-primary-color transition-colors duration-300">
+                            Anasayfa </a>
+                        <a href="singers.html"
+                            class="text-base font-medium hover:text-primary-color transition-colors duration-300">
+                            Şarkıcılar </a>
+                        <a href="albums.html"
+                            class="text-base font-medium text-primary-color transition-colors duration-300"> Albümler
+                        </a>
+
 
                     </nav>
 
@@ -68,24 +79,26 @@
             </div>
 
 
-<!-- Mobile -->
+            <!-- Mobile -->
             <div class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden">
-                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-gray-800 divide-y-2 divide-gray-50">
+                <div
+                    class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-gray-800 divide-y-2 divide-gray-50">
                     <div class=" pb-1 px-5">
                         <div class="flex items-center justify-between">
                             <div>
-                                <img class="h-10 w-auto"
-                                    src="../assets/images/logo.png" alt="logo">
+                                <img class="h-10 w-auto" src="../assets/images/logo.png" alt="logo">
                             </div>
                         </div>
 
                     </div>
                     <div class="py-3 px-5 space-y-6">
                         <div class="grid grid-cols-3 gap-y-4 gap-x-8 text-white">
-                            <a href="singers.html" class="text-base font-medium hover:text-primary-color transition-colors duration-300"> Şarkıcılar </a>
-                            <a href="albums.html" class="text-base font-medium text-primary-color transition-colors duration-300"> Albümler </a>
-                            <a href="poltio.com" class="text-base font-medium hover:text-primary-color transition-colors duration-300"> Anketler </a>
-
+                            <a href="singers.html"
+                                class="text-base font-medium hover:text-primary-color transition-colors duration-300">
+                                Şarkıcılar </a>
+                            <a href="albums.html"
+                                class="text-base font-medium text-primary-color transition-colors duration-300">
+                                Albümler </a>
 
                         </div>
                     </div>
@@ -97,13 +110,1314 @@
 
     <!-- Main Section -->
 
-  
-   
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div>
+                <p class="mt-2 text-3xl tracking-tight font-bold text-gray-900">Favori Albümlerim</p>
+                <p class="mt-4 text-lg text-gray-500">Herkese hitap edecek albümler bu sayfada. Albümdeki şarkılar ve
+                    bilgilerini zorlayacak testler.</p>
+                <img src="../assets/images/record.jpg" alt="record" class="py-10">
+            </div>
+
+            <div class="mt-12 lg:mt-0 lg:col-span-2">
+                <dl
+                    class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <a href="#album1"
+                                class="ml-9 text-lg leading-6 font-medium text-gray-900 hover:cursor-pointer hover:pl-1 transition-p duration-700 ">Bende
+                                Bi'Aşk Var</a>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">Göksel'in 2012'de çıkardığı 10 şarkılık pop
+                            albümüdür. Favorim 'Aşkın Yalanmış' şarkısıdır.
+                            <a type="button" class=" text-md font-medium rounded-md text-primary-color"
+                                data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                Test Zamanı
+                            </a>
+                        </dd>
+
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <a href="#album2"
+                                class="ml-9 text-lg leading-6 font-medium text-gray-900 hover:cursor-pointer hover:pl-1 transition-p duration-700">Maya</a>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">Mabel Matiz'in 2018 de çıkardığı 23 şarkılık pop
+                            albümüdür. Favorim 'Sarmaşık' şarkısıdır. <a type="button" class=" text-md font-medium rounded-md text-primary-color"
+                            data-bs-toggle="modal" data-bs-target="#albumModal1">
+                            Test Zamanı
+                        </a></dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <a href="#album3"
+                                class="ml-9 text-lg leading-6 font-medium text-gray-900 hover:cursor-pointer hover:pl-1 transition-p duration-700">Yollar
+                                Bizi Bekler</a>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">Pinhani'nin 2019'da çıkardığı 12 şarkılık rock
+                            albümüdür. Favorim Kalben ile yaptığı 'İyi Değilim Ben' şarkısıdır. <a type="button" class=" text-md font-medium rounded-md text-primary-color"
+                            data-bs-toggle="modal" data-bs-target="#albumModal1">
+                            Test Zamanı
+                        </a></dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <a href="#album4"
+                                class="ml-9 text-lg leading-6 font-medium text-gray-900 hover:cursor-pointer hover:pl-1 transition-p duration-700">Nem
+                                Kaldı</a>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">Cem Karaca'nın 1975'te çıkardığı 12 şarkılık rock
+                            albümüdür. Favorim 'Kendim Ettim Kendim Buldum' şarkısıdır. <a type="button" class=" text-md font-medium rounded-md text-primary-color"
+                            data-bs-toggle="modal" data-bs-target="#albumModal1">
+                            Test Zamanı
+                        </a></dd>
+                    </div>
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <a href="#album5"
+                                class="ml-9 text-lg leading-6 font-medium text-gray-900 hover:cursor-pointer hover:pl-1 transition-p duration-700">Kağıt
+                                Kesikleri</a>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">Sagopa Kajmer'in 2022'de çıkardığı 10 şarkılık rap
+                            albümüdür. Favorim 'Halen' şarkısıdır. <a type="button" class=" text-md font-medium rounded-md text-primary-color"
+                            data-bs-toggle="modal" data-bs-target="#albumModal1">
+                            Test Zamanı
+                        </a></dd>
+                    </div>
+
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <a href="#album6"
+                                class="ml-9 text-lg leading-6 font-medium text-gray-900 hover:cursor-pointer hover:pl-1 transition-p duration-700">Bendeki
+                                Sen</a>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">Sagopa Kajmer'in Kolera ile birlikte 2010'da
+                            çıkardığı 14 şarkılık rap albümüdür. Favorim 'Merhametine Dön' şarkısıdır. <a type="button" class=" text-md font-medium rounded-md text-primary-color"
+                            data-bs-toggle="modal" data-bs-target="#albumModal1">
+                            Test Zamanı
+                        </a></dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <a href="#album7"
+                                class="ml-9 text-lg leading-6 font-medium text-gray-900 hover:cursor-pointer hover:pl-1 transition-p duration-700">Kötü
+                                İnsanları Tanıma Senesi</a>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">Sagopa Kajmer'in 2008'de çıkardığı 16 şarkılık rap
+                            albümüdür. Favorim 'İki Tanık' şarkısıdır. <a type="button" class=" text-md font-medium rounded-md text-primary-color"
+                            data-bs-toggle="modal" data-bs-target="#albumModal1">
+                            Test Zamanı
+                        </a></dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <!-- Heroicon name: outline/check -->
+                            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <a href="#album8"
+                                class="ml-9 text-lg leading-6 font-medium text-gray-900 hover:cursor-pointer hover:pl-1 transition-p duration-700">Kalp
+                                Hastası</a>
+                        </dt>
+                        <dd class="mt-2 ml-9 text-base text-gray-500">Sagopa Kajmer'in 2013'te çıkardığı 17 şarkılık rap
+                            albümüdür. Favorim 'Meftun' şarkısıdır. <a type="button" class=" text-md font-medium rounded-md text-primary-color"
+                            data-bs-toggle="modal" data-bs-target="#albumModal1">
+                            Test Zamanı
+                        </a></dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <!-- divider -->
+        <div class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-primary-color"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <span class="px-3 bg-white text-lg font-medium text-gray-900"> Albümler </span>
+            </div>
+        </div>
+
+
+        <!-- Albums -->
+        <div class="px-5 pt-10">
+            <div id="album1" class="border border-solid border-2 rounded-md">
+                <div class="max-w-7xl mx-auto pt-2  px-1 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-1">
+                    <div>
+                        <p class="text-xl tracking-tight font-bold text-gray-900">Bende Bi'Aşk Var</p>
+                        <img src="../assets/images/album5.jpg" alt="album" width="150" height="150" class="py-5">
+                    </div>
+                    <div class="mt-0 lg:mt-0 lg:col-span-2">
+                        <dl
+                            class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-4 sm:gap-y-5 lg:gap-x-2">
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Acıyor</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Rüzgar</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Aşk Bitti</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Sarhoş</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Yalnız Kuş</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Aşkın Yalanmış</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Uzaktan</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Unuttun Mu Sahi</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Gidemiyorum</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Yarım Kalan Şarkı</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <a type="button"
+                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-color hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                        Bende Bi'Aşk?
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="albumModal1" tabindex="-1"
+                                        aria-labelledby="albumModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <iframe id="poltio-embed-quiz-4119" class="poltio-embed"
+                                                        src="https://www.poltio.com/e/quiz/4119?utm_source=embed2&utm_medium=&utm_campaign=quiz-4119&share=off&notify=off&align=center&disclaimer=off"
+                                                        width="100%" height="800" frameBorder="0"
+                                                        allowFullScreen="allowfullscreen" scrolling="yes" title="Embed"
+                                                        allow="clipboard-write"></iframe>
+                                                    <script src="https://platform.poltio.com/widget.js" defer></script>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn bg-primary-color text-white hover:bg-gray-800 hover:text-white transition-colors duration-500"
+                                                            data-bs-dismiss="modal">Kapat</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 pt-3">
+            <div id="album2" class="border border-solid border-2 rounded-md">
+                <div class="max-w-7xl mx-auto pt-2  px-1 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-1">
+                    <div>
+                        <p class="text-xl tracking-tight font-bold text-gray-900">Maya</p>
+                        <img src="../assets/images/maya.jpg" alt="album" width="150" height="150" class="py-5">
+                    </div>
+                    <div class="mt-0 lg:mt-0 lg:col-span-2">
+                        <dl
+                            class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-4 sm:gap-y-5 lg:gap-x-2">
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">A Canım</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Öyle Kolaysa</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Sarmaşık</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Ya Bu İşler Ne</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Dualar Değişir</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Boyalı Da Saçların</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Pembe</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Mükemmeli</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Fırtınadayım</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Mendilimde Kırmızım Var
+                                    </p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Babamı Beklerken</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Çukur</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Yaban</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Canki</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <a type="button"
+                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-color hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                        Maya
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="albumModal1" tabindex="-1"
+                                        aria-labelledby="albumModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <iframe id="poltio-embed-quiz-4119" class="poltio-embed"
+                                                        src="https://www.poltio.com/e/quiz/4119?utm_source=embed2&utm_medium=&utm_campaign=quiz-4119&share=off&notify=off&align=center&disclaimer=off"
+                                                        width="100%" height="800" frameBorder="0"
+                                                        allowFullScreen="allowfullscreen" scrolling="yes" title="Embed"
+                                                        allow="clipboard-write"></iframe>
+                                                    <script src="https://platform.poltio.com/widget.js" defer></script>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn bg-primary-color text-white hover:bg-gray-800 hover:text-white transition-colors duration-500"
+                                                            data-bs-dismiss="modal">Kapat</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 pt-3">
+            <div id="album3" class="border border-solid border-2 rounded-md">
+                <div class="max-w-7xl mx-auto pt-2  px-1 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-1">
+                    <div>
+                        <p class="text-xl tracking-tight font-bold text-gray-900">Yollar Bizi Bekler</p>
+                        <img src="../assets/images/album6.jpg" alt="album" width="150" height="150" class="py-5">
+                    </div>
+                    <div class="mt-0 lg:mt-0 lg:col-span-2">
+                        <dl
+                            class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-4 sm:gap-y-5 lg:gap-x-2">
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bana El Salla</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Kefen Giydim</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">İyi Değilim Ben</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Derdim Dostum Benim</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Gör Beni</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Sana Bir Şey Olursa</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Neden Ben Anlamam</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Senden Hatıra Kaldı</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Kendinden Usandırma</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Sevmek Güzeldir</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Peki Madem</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <a type="button"
+                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-color hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                        Yollar Bizi Bekler?
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="albumModal1" tabindex="-1"
+                                        aria-labelledby="albumModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <iframe id="poltio-embed-quiz-4119" class="poltio-embed"
+                                                        src="https://www.poltio.com/e/quiz/4119?utm_source=embed2&utm_medium=&utm_campaign=quiz-4119&share=off&notify=off&align=center&disclaimer=off"
+                                                        width="100%" height="800" frameBorder="0"
+                                                        allowFullScreen="allowfullscreen" scrolling="yes" title="Embed"
+                                                        allow="clipboard-write"></iframe>
+                                                    <script src="https://platform.poltio.com/widget.js" defer></script>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn bg-primary-color text-white hover:bg-gray-800 hover:text-white transition-colors duration-500"
+                                                            data-bs-dismiss="modal">Kapat</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 pt-3">
+            <div id="album4" class="border border-solid border-2 rounded-md">
+                <div class="max-w-7xl mx-auto pt-2  px-1 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-1">
+                    <div>
+                        <p class="text-xl tracking-tight font-bold text-gray-900">Nem Kaldı</p>
+                        <img src="../assets/images/nemkaldi.jpg" alt="album" width="150" height="150" class="py-5">
+                    </div>
+                    <div class="mt-0 lg:mt-0 lg:col-span-2">
+                        <dl
+                            class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-4 sm:gap-y-5 lg:gap-x-2">
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Nem Kaldı</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Baba</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Namus Belası</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Oy Leyli</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Gurbet</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Untamadığım</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Adsız</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Oy Bana Bana</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">İhtarname</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Muhtar</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Kendim Ettim Kendim
+                                        Buldum</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <a type="button"
+                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-color hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                        Nem Kaldı?
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="albumModal1" tabindex="-1"
+                                        aria-labelledby="albumModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <iframe id="poltio-embed-quiz-4119" class="poltio-embed"
+                                                        src="https://www.poltio.com/e/quiz/4119?utm_source=embed2&utm_medium=&utm_campaign=quiz-4119&share=off&notify=off&align=center&disclaimer=off"
+                                                        width="100%" height="800" frameBorder="0"
+                                                        allowFullScreen="allowfullscreen" scrolling="yes" title="Embed"
+                                                        allow="clipboard-write"></iframe>
+                                                    <script src="https://platform.poltio.com/widget.js" defer></script>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn bg-primary-color text-white hover:bg-gray-800 hover:text-white transition-colors duration-500"
+                                                            data-bs-dismiss="modal">Kapat</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 pt-3">
+            <div id="album5" class="border border-solid border-2 rounded-md">
+                <div class="max-w-7xl mx-auto pt-2  px-1 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-1">
+                    <div>
+                        <p class="text-xl tracking-tight font-bold text-gray-900">Kağıt Kesikleri</p>
+                        <img src="../assets/images/album1.jpg" alt="album" width="150" height="150" class="py-5">
+                    </div>
+                    <div class="mt-0 lg:mt-0 lg:col-span-2">
+                        <dl
+                            class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-4 sm:gap-y-5 lg:gap-x-2">
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Dokunan Yanar</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Derin Nefes</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Elbet</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Kağıt Kesikleri</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Gecenin Doğduğu Yerde</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bla Bla Bla</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Zamanı Geldi Mi</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Oy Bana Bana</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Halen</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Aklımı Kaçırmadığım Bir Gün Daha</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Ne Fayda</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <a type="button"
+                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-color hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                        Kağıt Kesikleri?
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="albumModal1" tabindex="-1"
+                                        aria-labelledby="albumModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <iframe id="poltio-embed-quiz-4119" class="poltio-embed"
+                                                        src="https://www.poltio.com/e/quiz/4119?utm_source=embed2&utm_medium=&utm_campaign=quiz-4119&share=off&notify=off&align=center&disclaimer=off"
+                                                        width="100%" height="800" frameBorder="0"
+                                                        allowFullScreen="allowfullscreen" scrolling="yes" title="Embed"
+                                                        allow="clipboard-write"></iframe>
+                                                    <script src="https://platform.poltio.com/widget.js" defer></script>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn bg-primary-color text-white hover:bg-gray-800 hover:text-white transition-colors duration-500"
+                                                            data-bs-dismiss="modal">Kapat</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 pt-3">
+            <div id="album6" class="border border-solid border-2 rounded-md">
+                <div class="max-w-7xl mx-auto pt-2  px-1 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-1">
+                    <div>
+                        <p class="text-xl tracking-tight font-bold text-gray-900">Bendeki Sen</p>
+                        <img src="../assets/images/album2.jpg" alt="album" width="150" height="150" class="py-5">
+                    </div>
+                    <div class="mt-0 lg:mt-0 lg:col-span-2">
+                        <dl
+                            class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-4 sm:gap-y-5 lg:gap-x-2">
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bu Böyledir</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Mevsimler Gibisin</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">İyi Bilirim</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Merhametine Dön</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bir Dizi İz</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bla Bla Bla</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Tadı Yok</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Terk-i Diyar</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Zaman Alacak İntikamımı</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Ne Olur</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <a type="button"
+                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-color hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                        Bendeki Sen?
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="albumModal1" tabindex="-1"
+                                        aria-labelledby="albumModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <iframe id="poltio-embed-quiz-4119" class="poltio-embed"
+                                                        src="https://www.poltio.com/e/quiz/4119?utm_source=embed2&utm_medium=&utm_campaign=quiz-4119&share=off&notify=off&align=center&disclaimer=off"
+                                                        width="100%" height="800" frameBorder="0"
+                                                        allowFullScreen="allowfullscreen" scrolling="yes" title="Embed"
+                                                        allow="clipboard-write"></iframe>
+                                                    <script src="https://platform.poltio.com/widget.js" defer></script>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn bg-primary-color text-white hover:bg-gray-800 hover:text-white transition-colors duration-500"
+                                                            data-bs-dismiss="modal">Kapat</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 pt-3">
+            <div id="album7" class="border border-solid border-2 rounded-md">
+                <div class="max-w-7xl mx-auto pt-2  px-1 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-1">
+                    <div>
+                        <p class="text-xl tracking-tight font-bold text-gray-900">Kötü İnsanları Tanıma Senesi</p>
+                        <img src="../assets/images/kits.jpg" alt="album" width="150" height="150" class="py-5">
+                    </div>
+                    <div class="mt-0 lg:mt-0 lg:col-span-2">
+                        <dl
+                            class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-4 sm:gap-y-5 lg:gap-x-2">
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bir Kulaç Daha Atsam Karadayım</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">İki Tanık</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bir Çıkar Yolum Yok</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Beyaban</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Gördüklerime İnanmam Gerek</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Tek Başınalığın Yolcusu</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Düşenin Dostu Olmaz</p>
+                                </dt>
+                            </div>
+                           
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Ben Hüsrana Komşuyum</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Düşersem Yanarım</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Gölge Haramileri</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Sahibinin Sesi</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Sonumuz Yakın Mesafe</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Vesselam</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Yakın ve Uzak</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Dessas</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <a type="button"
+                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-color hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                        K.İ.T.S.?
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="albumModal1" tabindex="-1"
+                                        aria-labelledby="albumModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <iframe id="poltio-embed-quiz-4119" class="poltio-embed"
+                                                        src="https://www.poltio.com/e/quiz/4119?utm_source=embed2&utm_medium=&utm_campaign=quiz-4119&share=off&notify=off&align=center&disclaimer=off"
+                                                        width="100%" height="800" frameBorder="0"
+                                                        allowFullScreen="allowfullscreen" scrolling="yes" title="Embed"
+                                                        allow="clipboard-write"></iframe>
+                                                    <script src="https://platform.poltio.com/widget.js" defer></script>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn bg-primary-color text-white hover:bg-gray-800 hover:text-white transition-colors duration-500"
+                                                            data-bs-dismiss="modal">Kapat</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 pt-3">
+            <div id="album8" class="border border-solid border-2 rounded-md">
+                <div class="max-w-7xl mx-auto pt-2  px-1 sm:px-6 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-1">
+                    <div>
+                        <p class="text-xl tracking-tight font-bold text-gray-900">Kalp Hastası</p>
+                        <img src="../assets/images/kalp.jpg" alt="album" width="150" height="150" class="py-5">
+                    </div>
+                    <div class="mt-0 lg:mt-0 lg:col-span-2">
+                        <dl
+                            class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-4 sm:gap-y-5 lg:gap-x-2">
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Benim Hayatım</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bulun</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Baytar</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Meftun</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Kalp Hastası</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Düşünmek İçin Vaktin Var</p>
+                                </dt>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Susmak İçin Yok Bahanem</p>
+                                </dt>
+                            </div>
+                           
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Taşlama</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Uzun Yollara Devam</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Yaptığın Hatalar Kadar Büyük Olmadın</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Dalgın</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Bugünün Elleri Boştu Ya Yarın</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">İster İStemez</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Yakın Sabah Fabrikam</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <dt>
+                                    <i
+                                        class="fa-solid fa-headphones-simple absolute h-6 w-6 text-primary-color mt-1"></i>
+                                    <p class="ml-7 text-md leading-6 font-medium text-gray-500">Durdur Beni</p>
+                                </dt>
+                            </div>
+                            <div class="relative">
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <a type="button"
+                                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-color hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        data-bs-toggle="modal" data-bs-target="#albumModal1">
+                                        Kalp Hastası?
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="albumModal1" tabindex="-1"
+                                        aria-labelledby="albumModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <iframe id="poltio-embed-quiz-4119" class="poltio-embed"
+                                                        src="https://www.poltio.com/e/quiz/4119?utm_source=embed2&utm_medium=&utm_campaign=quiz-4119&share=off&notify=off&align=center&disclaimer=off"
+                                                        width="100%" height="800" frameBorder="0"
+                                                        allowFullScreen="allowfullscreen" scrolling="yes" title="Embed"
+                                                        allow="clipboard-write"></iframe>
+                                                    <script src="https://platform.poltio.com/widget.js" defer></script>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn bg-primary-color text-white hover:bg-gray-800 hover:text-white transition-colors duration-500"
+                                                            data-bs-dismiss="modal">Kapat</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
 
 
 
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
 
 
 </body>
